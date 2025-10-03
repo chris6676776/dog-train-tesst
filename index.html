@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Dog Training Services</title>
+    <meta name="description" content="Expert dog training services for puppies and adult dogs. Transform your dog's behavior with proven methods and professional trainers.">
+    <!-- <meta name="author" content="PawPerfect Training"> -->
+    
+    <meta property="og:title" content="Professional Dog Training Services">
+    <meta property="og:description" content="Expert dog training services for puppies and adult dogs. Transform your dog's behavior with proven methods and professional trainers.">
+    <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <div class="logo-icon">🐕</div>
+                <span class="logo-text cpName">PawPerfect Training</span>
+            </div>
+            
+            <nav class="nav-desktop">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="btn btn-primary desktop-only">Consultation</button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <nav class="nav-mobile" id="mobileMenu">
+            <a href="#home" class="nav-link-mobile">Home</a>
+            <a href="#services" class="nav-link-mobile">Services</a>
+            <a href="#about" class="nav-link-mobile">About</a>
+            <a href="#contact" class="nav-link-mobile">Contact</a>
+            <button class="btn btn-primary mobile-menu-cta">Free Consultation</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-image">
+            <img src="src/assets/hero-dog-training.jpg" alt="Professional dog training">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="container hero-content">
+            <h1 class="hero-title">Transform Your Dog Into Your Dream Companion</h1>
+            <p class="hero-description">
+                Expert dog training services that build confidence, obedience, and lasting bonds. 
+                Professional trainers. Proven methods. Real results.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-accent btn-lg">
+                    Start Training Today
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </button>
+                <button class="btn btn-outline btn-lg">View Our Programs</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <!-- <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Training Programs</h2>
+                <p class="section-description">
+                    Professional training solutions designed to meet your dog's unique needs and your lifestyle
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="src/assets/puppy-training.jpg" alt="Puppy Training">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Puppy Training</h3>
+                        <p class="service-duration">2-4 Week Programs</p>
+                        <p class="service-description">
+                            Build a strong foundation with our comprehensive puppy programs. Perfect for dogs 8 weeks to 6 months old.
+                        </p>
+                        <ul class="service-features">
+                            <li><span class="bullet"></span>Basic Commands</li>
+                            <li><span class="bullet"></span>Socialization</li>
+                            <li><span class="bullet"></span>House Training</li>
+                            <li><span class="bullet"></span>Bite Inhibition</li>
+                        </ul>
+                        <button class="btn btn-primary btn-full">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="src/assets/adult-training.jpg" alt="Adult Dog Training">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Adult Dog Training</h3>
+                        <p class="service-duration">1-3 Week Programs</p>
+                        <p class="service-description">
+                            Transform behavioral issues and reinforce obedience for adult dogs of all breeds and sizes.
+                        </p>
+                        <ul class="service-features">
+                            <li><span class="bullet"></span>Obedience Training</li>
+                            <li><span class="bullet"></span>Behavior Modification</li>
+                            <li><span class="bullet"></span>Off-Leash Control</li>
+                            <li><span class="bullet"></span>Advanced Commands</li>
+                        </ul>
+                        <button class="btn btn-primary btn-full">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="src/assets/private-lessons.jpg" alt="Private Lessons">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Private Lessons</h3>
+                        <p class="service-duration">Flexible Scheduling</p>
+                        <p class="service-description">
+                            One-on-one personalized training sessions tailored to your dog's specific needs and your goals.
+                        </p>
+                        <ul class="service-features">
+                            <li><span class="bullet"></span>Customized Training</li>
+                            <li><span class="bullet"></span>In-Home Sessions</li>
+                            <li><span class="bullet"></span>Personal Attention</li>
+                            <li><span class="bullet"></span>Flexible Pace</li>
+                        </ul>
+                        <button class="btn btn-primary btn-full">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2 class="about-title">Why Choose <span class="cpName">PawPerfect Training</span>?</h2>
+                    <p class="about-description">
+                        We're not just trainers – we're passionate dog lovers dedicated to helping you build 
+                        a stronger relationship with your furry companion. Our proven methods combine expert 
+                        knowledge with patience and understanding.
+                    </p>
+                    <div class="features-grid">
+                        <div class="feature">
+                            <svg class="feature-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>Certified Professional Trainers</span>
+                        </div>
+                        <div class="feature">
+                            <svg class="feature-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>Positive Reinforcement Methods</span>
+                        </div>
+                        <div class="feature">
+                            <svg class="feature-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>Customized Training Plans</span>
+                        </div>
+                        <div class="feature">
+                            <svg class="feature-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>Proven Track Record</span>
+                        </div>
+                        <div class="feature">
+                            <svg class="feature-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>Ongoing Support & Guidance</span>
+                        </div>
+                        <div class="feature">
+                            <svg class="feature-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>All Breeds & Ages Welcome</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stats-container">
+                    <div class="stats-wrapper">
+                        <div class="stat-card">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Dogs Trained Successfully</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number accent">15+</div>
+                            <div class="stat-label">Years of Experience</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">Client Satisfaction Rate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-bg"></div>
+        <div class="container contact-content">
+            <h2 class="contact-title">Ready to Start Your Dog's Training Journey?</h2>
+            <p class="contact-description">
+                Book your free consultation today and discover how we can help transform your dog's behavior
+            </p>
+            
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="contact-item-title">Call Us</h3>
+                    <p class="contact-item-text Pno">(555) 123-4567</p>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="contact-item-title">Email Us</h3>
+                    <p class="contact-item-text">I dont have you mail</p>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="contact-item-title">Visit Us</h3>
+                    <p class="contact-item-text addNo">123 Training Ave, Your City</p>
+                </div>
+            </div>
+            
+            <button class="btn btn-accent btn-lg">Schedule Free Consultation</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="logo-icon">🐕</div>
+                        <span class="logo-text">PawPerfect</span>
+                    </div>
+                    <p class="footer-text">
+                        Professional dog training services to help you and your dog live in harmony.
+                    </p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Puppy Training</a></li>
+                        <li><a href="#services">Adult Dog Training</a></li>
+                        <li><a href="#services">Private Lessons</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                    </ul>
+                </div>
+                
+                <!-- <div class="footer-column">
+                    <h4 class="footer-heading">Hours</h4>
+                    <ul class="footer-links">
+                        <li>Monday - Friday: 8am - 6pm</li>
+                        <li>Saturday: 9am - 4pm</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                </div> -->
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> <span class="cpName">PawPerfect Training</span>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
