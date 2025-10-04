@@ -1,192 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pet Grooming Services</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Dog Training Services</title>
+    <meta name="description" content="Expert dog training services for puppies and adult dogs. Transform your dog's behavior with proven methods and professional trainers.">
+    <!-- <meta name="author" content="PawPerfect Training"> -->
+    
+    <meta property="og:title" content="Professional Dog Training Services">
+    <meta property="og:description" content="Expert dog training services for puppies and adult dogs. Transform your dog's behavior with proven methods and professional trainers.">
+    <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header -->
-  <header class="header">
-    <div class="container header-content">
-      <div class="logo">
-        <div class="logo-icon">🐾</div>
-        <span class="logo-text cpName">FluffyCare Grooming</span>
-      </div>
-      <nav class="nav-desktop">
-        <a href="#home" class="nav-link">Home</a>
-        <a href="#services" class="nav-link">Services</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </nav>
-      <div class="header-actions">
-        <button class="btn btn-primary desktop-only">Book Appointment</button>
-        <button class="mobile-menu-btn" id="mobileMenuBtn">
-          <svg width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-        </button>
-      </div>
-    </div>
-
-    <nav class="nav-mobile" id="mobileMenu">
-      <a href="#home" class="nav-link-mobile">Home</a>
-      <a href="#services" class="nav-link-mobile">Services</a>
-      <a href="#about" class="nav-link-mobile">About</a>
-      <a href="#contact" class="nav-link-mobile">Contact</a>
-      <button class="btn btn-primary mobile-menu-cta">Book Appointment</button>
-    </nav>
-  </header>
-
-  <!-- Hero -->
-  <section id="home" class="hero">
-    <div class="hero-image">
-      <img src="https://images.pexels.com/photos/406014/pexels-photo-406014.jpeg?_gl=1*cqfati*_ga*MTc0NDc3MjY4Ni4xNzU5NTY0MjUx*_ga_8JE65Q40S6*czE3NTk1NjQyNTAkbzEkZzEkdDE3NTk1NjQyNzQkajM2JGwwJGgw" alt="Pet grooming hero">
-      <div class="hero-overlay"></div>
-    </div>
-    <div class="container hero-content">
-      <h1 class="hero-title">Pamper Your Pet With Gentle Grooming</h1>
-      <p class="hero-description">Professional grooming that keeps your pets clean, happy, and stylish — because they deserve the best care.</p>
-      <div class="hero-buttons">
-        <button class="btn btn-accent btn-lg">Book Now</button>
-        <button class="btn btn-outline btn-lg">View Packages</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services -->
-  <section id="services" class="services">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Our Grooming Services</h2>
-        <p class="section-description">From soothing baths to full styling, we offer everything your pet needs for a refreshing experience.</p>
-      </div>
-
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-image">
-            <img src="https://images.pexels.com/photos/4588019/pexels-photo-4588019.jpeg" alt="Bath & Blow Dry">
-          </div>
-          <div class="service-content">
-            <h3 class="service-title">Bath & Blow Dry</h3>
-            <p class="service-description">Gentle, deep-cleaning bath followed by a relaxing blow dry — perfect for all pets.</p>
-            <button class="btn btn-primary btn-full">Learn More</button>
-          </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <div class="logo-icon">🐕</div>
+                <span class="logo-text cpName">PawPerfect Training</span>
+            </div>
+            
+            <nav class="nav-desktop">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="btn btn-primary desktop-only">Consultation</button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
         </div>
+        
+        <!-- Mobile Menu -->
+        <nav class="nav-mobile" id="mobileMenu">
+            <a href="#home" class="nav-link-mobile">Home</a>
+            <a href="#services" class="nav-link-mobile">Services</a>
+            <a href="#about" class="nav-link-mobile">About</a>
+            <a href="#contact" class="nav-link-mobile">Contact</a>
+            <button class="btn btn-primary mobile-menu-cta">Free Consultation</button>
+        </nav>
+    </header>
 
-        <div class="service-card">
-          <div class="service-image">
-            <img src="https://images.pexels.com/photos/12283472/pexels-photo-12283472.jpeg" alt="Hair Trimming">
-          </div>
-          <div class="service-content">
-            <h3 class="service-title">Hair Trimming & Styling</h3>
-            <p class="service-description">Customized cuts and professional styling to make your pet look their best.</p>
-            <button class="btn btn-primary btn-full">Learn More</button>
-          </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-image">
+            <img src="src/assets/hero-dog-training.jpg" alt="Professional dog training">
+            <div class="hero-overlay"></div>
         </div>
+        
+        <div class="container hero-content">
+            <h1 class="hero-title">Transform Your Dog Into Your Dream Companion</h1>
+            <p class="hero-description">
+                Expert dog training services that build confidence, obedience, and lasting bonds. 
+                Professional trainers. Proven methods. Real results.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-accent btn-lg">
+                    Start Training Today
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </button>
+                <button class="btn btn-outline btn-lg">View Our Programs</button>
+            </div>
+        </div>
+    </section>
 
-        <div class="service-card">
-          <div class="service-image">
-            <img src="https://images.pexels.com/photos/19145872/pexels-photo-19145872.jpeg" alt="Nail & Paw Care">
-          </div>
-          <div class="service-content">
-            <h3 class="service-title">Nail & Paw Care</h3>
-            <p class="service-description">Safe nail trimming and paw treatment to keep your pets healthy and comfortable.</p>
-            <button class="btn btn-primary btn-full">Learn More</button>
-          </div>
+   <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2 class="about-title">Why Choose <span class="cpName">PawPerfect Training</span>?</h2>
+                    <p class="about-description">
+                        We're not just trainers – we're passionate dog lovers dedicated to helping you build 
+                        a stronger relationship with your furry companion. Our proven methods combine expert 
+                        knowledge with patience and understanding.
+                    </p>
+                    <div class="features-grid">
+                        <div class="feature">
+                            <svg class="feature-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>Certified Professional Trainers</span>
+                        </div>
+                        <div class="feature">
+                            <svg class="feature-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>Positive Reinforcement Methods</span>
+                        </div>
+                        <div class="feature">
+                            <svg class="feature-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>Customized Training Plans</span>
+                        </div>
+                        <div class="feature">
+                            <svg class="feature-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>Proven Track Record</span>
+                        </div>
+                        <div class="feature">
+                            <svg class="feature-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>Ongoing Support & Guidance</span>
+                        </div>
+                        <div class="feature">
+                            <svg class="feature-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>All Breeds & Ages Welcome</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stats-container">
+                    <div class="stats-wrapper">
+                        <div class="stat-card">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Dogs Trained Successfully</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number accent">15+</div>
+                            <div class="stat-label">Years of Experience</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">Client Satisfaction Rate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- About -->
-  <section id="about" class="about">
-    <div class="container about-grid">
-      <div class="about-content">
-        <h2 class="about-title">Why Choose <span class="cpName">FluffyCare Grooming</span>?</h2>
-        <p class="about-description">We combine professional grooming with genuine love and care for animals. Our groomers ensure every session is comfortable, safe, and tailored to your pet’s needs.</p>
-        <div class="features-grid">
-          <div class="feature">🌸 Certified Pet Groomers</div>
-          <div class="feature">🧼 Hypoallergenic Products</div>
-          <div class="feature">🐶 All Breeds & Sizes Welcome</div>
-          <div class="feature">❤️ Gentle & Stress-Free Handling</div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-bg"></div>
+        <div class="container contact-content">
+            <h2 class="contact-title">Ready to Start Your Dog's Training Journey?</h2>
+            <p class="contact-description">
+                Book your free consultation today and discover how we can help transform your dog's behavior
+            </p>
+            
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="contact-item-title">Call Us</h3>
+                    <p class="contact-item-text Pno">(555) 123-4567</p>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="contact-item-title">Email Us</h3>
+                    <p class="contact-item-text">I dont have you mail</p>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="contact-item-title">Visit Us</h3>
+                    <p class="contact-item-text addNo">123 Training Ave, Your City</p>
+                </div>
+            </div>
+            
+            <button class="btn btn-accent btn-lg">Schedule Free Consultation</button>
         </div>
-      </div>
-      <div class="stats-container">
-        <div class="stats-wrapper">
-          <div class="stat-card">
-            <div class="stat-number accent">1K+</div>
-            <div class="stat-label">Happy Pets Groomed</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">10+</div>
-            <div class="stat-label">Years of Experience</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">99%</div>
-            <div class="stat-label">Client Satisfaction</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact" class="contact">
-    <div class="contact-bg"></div>
-    <div class="container contact-content">
-      <h2 class="contact-title">Book a Spa Day for Your Pet</h2>
-      <p class="contact-description">Call us or visit our salon to give your furry friend the pampering they deserve.</p>
-
-      <div class="contact-grid">
-        <div class="contact-item">
-          <div class="contact-icon">📞</div>
-          <h3 class="contact-item-title">Call Us</h3>
-          <p class="contact-item-text Pno">(555) 987-6543</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="logo-icon">🐕</div>
+                        <span class="logo-text">PawPerfect</span>
+                    </div>
+                    <p class="footer-text">
+                        Professional dog training services to help you and your dog live in harmony.
+                    </p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Puppy Training</a></li>
+                        <li><a href="#services">Adult Dog Training</a></li>
+                        <li><a href="#services">Private Lessons</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                    </ul>
+                </div>
+                
+                <!-- <div class="footer-column">
+                    <h4 class="footer-heading">Hours</h4>
+                    <ul class="footer-links">
+                        <li>Monday - Friday: 8am - 6pm</li>
+                        <li>Saturday: 9am - 4pm</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                </div> -->
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> <span class="cpName">PawPerfect Training</span>. All rights reserved.</p>
+            </div>
         </div>
-        <div class="contact-item">
-          <div class="contact-icon">📍</div>
-          <h3 class="contact-item-title">Visit Us</h3>
-          <p class="contact-item-text addNo">45 Pet Lane, CozyTown</p>
-        </div>
-      </div>
+    </footer>
 
-      <button class="btn btn-accent btn-lg">Schedule Appointment</button>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-column">
-          <div class="footer-logo">
-            <div class="logo-icon">🐾</div>
-            <span class="logo-text cpName">FluffyCare Grooming</span>
-          </div>
-          <p class="footer-text">Professional grooming services that keep your pets healthy, happy, and stylish.</p>
-        </div>
-        <div class="footer-column">
-          <h4 class="footer-heading">Quick Links</h4>
-          <ul class="footer-links">
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; <span id="year"></span> <span class="cpName">FluffyCare Grooming</span>. All Rights Reserved.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
